@@ -13,7 +13,7 @@ public class WordDictionary {
     private List<String> words;
 
     public WordDictionary() {
-        words = new ArrayList<String>();
+        words = new ArrayList<>();
         uploadWordsFromFile();
     }
 
@@ -27,10 +27,6 @@ public class WordDictionary {
         } catch (FileNotFoundException e) {
             System.err.printf(Constants.FILE_NOT_FOUND, Constants.WORDS_FILE_PATH);
         }
-    }
-
-    public List<String> getWords() {
-        return words;
     }
 
     public String getRandomWord() {
